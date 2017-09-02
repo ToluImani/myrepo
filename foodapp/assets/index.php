@@ -37,6 +37,9 @@ $htm = "
       <link href='css/fonts.css?ver=2.1.1' rel='stylesheet' type='text/css' id='fonts-css' />
       <link href='css/stylesheet.css?ver=2.1.1' rel='stylesheet' type='text/css' id='stylesheet-css' />
       <link href='assets/js-image-slider.css' rel='stylesheet' type='text/css' />
+      <link href='assets/css/owl.carousel.min.css' rel='stylesheet' type='text/css' />
+      <link href='assets/css/owl.theme.default.min.css' rel='stylesheet' type='text/css' />
+      
        
       <script src='assets/js-image-slider.js' type='text/javascript'></script>
       <link href='assets/generic.css' rel='stylesheet' type='text/css' />
@@ -46,6 +49,8 @@ $htm = "
       <script src='js/select2.js?ver=2.1.1' charset='utf-8' type='text/javascript' id='select-2-js' ></script>
       <script src='js/jquery.raty.js?ver=2.1.1' charset='utf-8' type='text/javascript' id='jquery-raty-js' ></script>
       <script src='js/common.js?ver=2.1.1' charset='utf-8' type='text/javascript' id='common-js' ></script>        	
+      <script src-'js/jquery.min.js'></script>
+      <script src-'js/owl.carousel.min.js'></script>
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -78,6 +83,17 @@ $htm = "
          <img src='assets/ceva.jpg ' alt='Welcome to FoodApp ' />
          <img src='assets/fri2.jpg ' alt='Welcome to FoodApp ' />
       </div>
+      
+      
+      <div class="owl-carousel">
+	  <div> <img src=' assets/foof3.jpg ' alt='Welcome to FoodApp '/> </div>
+	  <div> <img src='assets/foof5.jpg ' alt='Welcome to FoodApp '/> </div>
+	  <div> <img src='assets/tai.jpg ' alt='Welcome to FoodApp ' /> </div>
+	  <div> <img src='assets/fri.jpg ' alt='Welcome to FoodApp ' /> </div>
+	  <div> <img src='assets/ceva.jpg ' alt='Welcome to FoodApp ' /> </div>
+	  <div> <img src='assets/fri2.jpg ' alt='Welcome to FoodApp ' /> </div>
+	</div>
+
       <div id='htmlcaption ' style='display: none; '>
          <em>HTML</em> caption. Link to <a href='http://www.google.com/ '>Google</a>.
       </div>
@@ -336,6 +352,31 @@ $htm = "
                             x[myIndexi-1].style.display = 'block';  
                             setTimeout(carouseli, 3000); // Change image every 2 seconds
                         }
+</script>
+
+<script>
+$('.loop').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
+$('.nonloop').owlCarousel({
+    center: true,
+    items:2,
+    loop:false,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
 </script>
 
 
